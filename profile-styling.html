@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+	<title>Profile Styling</title>
+
+	<style type="text/css">
+		/*
+			Primary color: #d81b60;
+			Primary darker color: #880e4f;
+
+			Sidebar width: 250px;
+
+			Padding across the site: 30px; ( smaller padding will be 15px or 10px)
+		*/
+		body{
+	   margin: 0;
+	   font-family: sans-serif;
+	   font-family: "Roboto", sans-serif;
+	   background: #eee;
+	}
+	*{
+	   box-sizing: border-box
+	}
+	ul {
+	   list-style-type: none;
+	   margin: 0;
+	   padding: 0;
+	   overflow: hidden;
+	   float: right;
+	}
+	li {
+	   float: left;
+	}
+	li a {
+	   display: block;
+	   color: white;
+	   text-align: center;
+	   padding: 18px;
+	   text-decoration: none;
+	}
+	li a:hover {
+	   background-color: #880e4f;
+	}
+	h1{ 
+	   font-size: 1.4em;
+	   margin-top: 0;
+	}
+	h2{
+	   font-size: 1.2em;
+	}
+	.logo {
+	   margin-top: 30px;
+	   margin-left: 30px;
+	   height: 45px;
+	   position: relative;
+	}
+	.img-container {
+	   padding: 10px;
+	}
+	.base-header{
+	   height: 50px;
+	}
+	.wrapper{
+	   min-height: 100vh;
+	   background: #fff;
+	   display: flex;
+	   flex-direction: column;
+	   max-width: 1142px;
+	   margin: 0 auto; 
+	}
+	.header, .footer{
+	   height: 56px;
+	}
+	.header, .base-header{
+	   background: #d81b60;
+	}
+	.footer{
+	   background: #212121;
+	}
+	.content {
+	   flex: 1;
+	   display: flex;
+	   color: #000;
+	}
+	.columns{
+	   display: flex;
+	   flex: 1;
+	}
+	.main{
+	   flex: 1;
+	   padding: 15px 30px;
+	}
+	.sidebar{
+	   width: 250px;
+	}
+	.avatar {
+	   margin-top: 20px;
+	   width: 100%;
+	   border-radius: 100%;
+	   border-bottom: 10px solid #bfbfbf !important;
+	   background: #f6f6f6;
+	}
+	.col-4 {
+	   width: 33.3%;
+	   float: left;
+	   padding: 5px;
+	}
+	.gallery img{
+	   width: 100% !important;
+	}
+	.copyright{
+	   float: left;
+	   color: #fff;
+	   padding: 18px 20px;
+	}
+
+	@media only screen and (max-width: 900px) {
+	  .col-4 {
+	      width: 50%;
+	   }  
+	}
+	@media only screen and (max-width: 780px) {
+	  .sidebar {
+	    width: 180px;
+	   }
+	   .logo {
+	    margin-top: 30px;
+	    margin-left: 8px;
+	    height: 36px;
+	   }
+	   .base-header {
+	    height: 30px;
+	   }
+	}
+	@media only screen and (max-width: 650px) {
+	  .col-4 {
+	      width: 100%;
+	   }  
+	   .logo {
+	      margin-top: 10px;
+	   }
+	   .avatar {
+	    margin-top: -42px;
+	   }
+	   .sidebar{
+	      background: #efefef;
+	   }
+	}
+
+	@media only screen and (max-width: 500px) {
+	  .avatar {
+	   margin-top: 20px;
+	  }
+	  .logo {
+	    margin-top: 12px;
+	    margin-left: 0;
+	    height: 36px;
+	    width: 100%;
+	   }
+	   ul.top-menu {
+	    float: none;
+	    width: 100%;
+	    background: #d81b60;
+	    text-align: center;
+	   }
+	   .base-header {
+	    display: none;
+	   }
+	   ul.top-menu li {
+	    float: left;
+	    width: 33.3%;
+	   }
+	   .content {
+	    margin-top: 40px;
+	   }
+	   .columns {
+	    display: block;
+	   }
+	   .img-container {
+	    text-align: center;
+	   }
+	   .avatar {
+	    width: 80%;
+	   }
+	   header.header {
+	    border-bottom: 5px solid #fff;
+	   }
+	   .sidebar {
+	    width: 100%;
+	    margin-top: 10px;
+	   }
+	   .gallery {
+	    margin-left: -30px;
+	    margin-right: -30px;
+	   }
+	   h1, h2{
+	      text-align: center;
+	   }
+	}
+
+
+
+
+	</style>
+
+</head>
+<body>
+<div class="wrapper">
+      <header class="header">
+
+         <img class="logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDMxNDEuMyA3NDIuMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzE0MS4zIDc0Mi4xOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cgkuc3Qxe2ZpbGw6bm9uZTt9Cgkuc3Qye2Rpc3BsYXk6bm9uZTt9Cgkuc3Qze2Rpc3BsYXk6aW5saW5lO2ZpbGw6I0I5MjM1Mzt9Cgkuc3Q0e2Rpc3BsYXk6aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnIGlkPSJMYXllcl8xIj4KCTxnIGlkPSJMYXllcl84Ij4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjk0Ny45LDM2Ni45YzAtMS4zLDAuMi0yLjUsMC4yLTMuOHYtMC42VjExMy4zaC02MXYxMjkuNiIvPgoJPC9nPgoJPGcgaWQ9IkxheWVyXzciPgoJCTxnPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjMzLjEsMjA2LjhjMjEuNywwLDQyLDQuMSw2MS4yLDEyLjRjMTkuMSw4LjMsMzUuOSwxOS41LDUwLjIsMzMuN2MxNC40LDE0LjIsMjUuNywzMSwzNCw1MC4zCgkJCQljOC4zLDE5LjMsMTIuNCwzOS45LDEyLjQsNjEuNnYxNTMuM2gtNjF2LTI4LjdjLTEzLjQsMTAuMi0yOC4yLDE4LjItNDQuNCwyNGMtMTYuMiw1LjktMzMuNiw4LjgtNTIuMSw4LjgKCQkJCWMtMjEuNywwLTQyLjEtNC4xLTYxLjMtMTIuNGMtMTkuMS04LjMtMzUuOC0xOS41LTUwLTMzLjhjLTE0LjItMTQuMi0yNS41LTMwLjktMzMuOC01MGMtOC4zLTE5LjEtMTIuNC0zOS42LTEyLjQtNjEuMwoJCQkJYzAtMjEuNyw0LjEtNDIuMiwxMi40LTYxLjZjOC4zLTE5LjMsMTkuNS0zNi4xLDMzLjctNTAuM2MxNC4yLTE0LjIsMzAuOC0yNS41LDQ5LjktMzMuN0MxOTEsMjExLDIxMS40LDIwNi44LDIzMy4xLDIwNi44egoJCQkJIE0yMzMuNCw0NjEuNGMxMy40LDAsMjYtMi42LDM3LjYtNy43YzExLjYtNS4yLDIxLjgtMTIuMSwzMC41LTIwLjhjOC43LTguNywxNS42LTE5LDIwLjctMzAuN2M1LjEtMTEuNyw3LjctMjQuMSw3LjctMzcuMgoJCQkJYzAtMTMuNS0yLjYtMjYuMS03LjctMzcuOGMtNS4xLTExLjctMTItMjEuOS0yMC43LTMwLjdjLTguNy04LjctMTguOS0xNS43LTMwLjUtMjAuOWMtMTEuNi01LjItMjQuMi03LjctMzcuNi03LjcKCQkJCWMtMTMuNCwwLTI2LDIuNi0zNy42LDcuN2MtMTEuNiw1LjItMjEuOCwxMi4xLTMwLjUsMjAuOWMtOC43LDguNy0xNS42LDE5LTIwLjcsMzAuN2MtNS4xLDExLjctNy43LDI0LjMtNy43LDM3LjgKCQkJCWMwLDEzLjEsMi42LDI1LjUsNy43LDM3LjJjNS4xLDExLjcsMTIsMjEuOSwyMC43LDMwLjdjOC43LDguNywxOC44LDE1LjcsMzAuNSwyMC44QzIwNy40LDQ1OC44LDIyMCw0NjEuNCwyMzMuNCw0NjEuNHoiLz4KCQkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTc0MC45LDM2My4xYzAsMjEuNy00LDQyLTEyLjEsNjFjLTguMSwxOC45LTE5LjIsMzUuNS0zMy41LDQ5LjdjLTE0LjIsMTQuMi0zMC44LDI1LjQtNDkuNywzMy41CgkJCQljLTE4LjksOC4xLTM5LjMsMTIuMS02MSwxMi4xYy0yMS43LDAtNDItNC02MS0xMi4xYy0xOC45LTguMS0zNS41LTE5LjItNDkuNy0zMy41Yy0xNC4yLTE0LjItMjUuNC0zMC44LTMzLjUtNDkuNwoJCQkJYy04LjEtMTguOS0xMi4xLTM5LjMtMTIuMS02MWMwLTIxLjcsNC00MiwxMi4xLTYxYzguMS0xOC45LDE5LjItMzUuNSwzMy41LTQ5LjdjMTQuMi0xNC4yLDMwLjgtMjUuNCw0OS43LTMzLjUKCQkJCWMxOC45LTguMSwzOS4zLTEyLjEsNjEtMTIuMWMxOC4yLDAsMzUuMiwyLjksNTEuMiw4LjZjMTYsNS43LDMwLjcsMTMuNyw0NC4xLDI0di0xMDVoNjF2MjI4LjJWMzYzLjF6IE01ODQuOSw0NTguNAoJCQkJYzEzLDAsMjUuMy0yLjUsMzYuOS03LjRjMTEuNi00LjksMjEuNy0xMS43LDMwLjQtMjAuNGM4LjctOC43LDE1LjQtMTguOCwyMC40LTMwLjVjNC45LTExLjYsNy40LTI0LDcuNC0zN3YtMC42CgkJCQljMC0xMy0yLjUtMjUuMy03LjQtMzYuN2MtNC45LTExLjQtMTEuNy0yMS41LTIwLjQtMzAuMmMtOC43LTguNy0xOC44LTE1LjUtMzAuNC0yMC40Yy0xMS42LTQuOS0yMy45LTcuNC0zNi45LTcuNAoJCQkJYy0xMywwLTI1LjMsMi41LTM2LjksNy40Yy0xMS42LDQuOS0yMS43LDExLjgtMzAuNCwyMC40Yy04LjcsOC43LTE1LjUsMTguOS0yMC43LDMwLjVjLTUuMSwxMS42LTcuNywyNC03LjcsMzcKCQkJCWMwLDEzLDIuNiwyNS40LDcuNywzN2M1LjEsMTEuNiwxMiwyMS44LDIwLjcsMzAuNWM4LjcsOC43LDE4LjgsMTUuNSwzMC40LDIwLjRDNTU5LjYsNDU2LDU3MS45LDQ1OC40LDU4NC45LDQ1OC40eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTYxLjgsMzgzLjNoLTExOWMyLjQsMTAuNyw2LjQsMjAuNiwxMi4xLDI5LjljNS43LDkuMywxMi43LDE3LjMsMjEsMjRjOC4zLDYuNywxNy42LDExLjksMjcuOCwxNS43CgkJCQljMTAuMywzLjgsMjEuMSw1LjYsMzIuNiw1LjZjMTMuOCwwLDI2LjctMi44LDM4LjgtOC4zYzEyLTUuNSwyMi42LTEzLjIsMzEuNy0yMy4xaDExLjJoNjAuNGMtMi40LDUuOS01LjIsMTEuNS04LjYsMTYuOQoJCQkJYy0zLjQsNS4zLTcsMTAuNi0xMSwxNS43Yy0xNC4yLDE4LjItMzIsMzIuNy01My4zLDQzLjVjLTIxLjMsMTAuOS00NC40LDE2LjMtNjkuMywxNi4zYy0yMS43LDAtNDItNC02MS0xMi4xCgkJCQljLTE4LjktOC4xLTM1LjUtMTkuMi00OS43LTMzLjVjLTE0LjItMTQuMi0yNS40LTMwLjgtMzMuNS00OS43Yy04LjEtMTguOS0xMi4xLTM5LjMtMTIuMS02MWMwLTIxLjcsNC00MiwxMi4xLTYxCgkJCQljOC4xLTE4LjksMTkuMi0zNS41LDMzLjUtNDkuN2MxNC4yLTE0LjIsMzAuOC0yNS40LDQ5LjctMzMuNWMxOC45LTguMSwzOS4zLTEyLjEsNjEtMTIuMWMyNC45LDAsNDgsNS40LDY5LjMsMTYuMwoJCQkJYzIxLjMsMTAuOSwzOS4xLDI1LjYsNTMuMyw0NC4xYzEzLDE1LjgsMjIuNSwzNC4zLDI4LjQsNTUuN2MzLjYsMTIuNiw1LjMsMjYuMSw1LjMsNDAuM2MwLDcuMS0wLjYsMTMuOC0xLjgsMjAuMWgtNjEuNkg5NjEuOHoKCQkJCSBNOTM2LjMsMjY3LjhjLTE5LjMsMC0zNi42LDUtNTEuOCwxNC45Yy0xNS4yLDEwLTI2LjcsMjMuMS0zNC42LDM5LjVoMTM4aDM0LjljLTItMy4xLTMuOC02LjItNS42LTkuNGMtMS44LTMuMS0zLjctNi4xLTUuNi04LjgKCQkJCWMtOS4xLTExLjMtMjAuMS0yMC4yLTMzLjItMjYuNkM5NjUuMywyNzEsOTUxLjMsMjY3LjgsOTM2LjMsMjY3Ljh6Ii8+CgkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNDg5LjQsMjE4LjN2LTc4LjFoNjF2NzguMWg1Ni44djYxaC01Ni44djI0MC4xaC02MVYyNzkuMyIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEzMi4zLDM2Mi41YzAtMjEuNyw0LjEtNDIsMTIuMS02MWM4LjEtMTguOSwxOS4yLTM1LjUsMzMuNS00OS43YzE0LjItMTQuMiwzMC44LTI1LjQsNDkuNy0zMy41CgkJCQljMTktOC4xLDM5LjMtMTIuMSw2MS0xMi4xYzIxLjcsMCw0Miw0LDYxLDEyLjFjMTksOC4xLDM1LjUsMTkuMiw0OS43LDMzLjVjMTQuMiwxNC4yLDI1LjQsMzAuOCwzMy41LDQ5LjcKCQkJCWM4LjEsMTguOSwxMi4xLDM5LjMsMTIuMSw2MWMwLDIxLjctNCw0Mi0xMi4xLDYxYy04LjEsMTguOS0xOS4zLDM1LjUtMzMuNSw0OS43Yy0xNC4yLDE0LjItMzAuOCwyNS40LTQ5LjcsMzMuNQoJCQkJYy0xOC45LDguMS0zOS4zLDEyLjEtNjEsMTIuMWMtMTguMSwwLTM1LjItMi45LTUxLjItOC42Yy0xNi01LjctMzAuNy0xMy43LTQ0LjEtMjR2MTI2LjFoLTYxVjM2My4xVjM2Mi41eiBNMTI4OC4zLDI2Ny4yCgkJCQljLTEzLDAtMjUuMywyLjUtMzYuOSw3LjRjLTExLjYsNC45LTIxLjcsMTEuNy0zMC40LDIwLjRjLTguNyw4LjctMTUuNCwxOC44LTIwLjQsMzAuNWMtNC45LDExLjYtNy40LDI0LTcuNCwzN3YwLjYKCQkJCWMwLDEzLDIuNSwyNS4zLDcuNCwzNi43YzQuOSwxMS40LDExLjcsMjEuNSwyMC40LDMwLjJjOC43LDguNywxOC44LDE1LjUsMzAuNCwyMC40YzExLjYsNC45LDIzLjksNy40LDM2LjksNy40CgkJCQljMTMsMCwyNS4zLTIuNSwzNi45LTcuNGMxMS42LTQuOSwyMS43LTExLjgsMzAuNC0yMC40YzguNy04LjcsMTUuNS0xOC45LDIwLjctMzAuNWM1LjEtMTEuNiw3LjctMjQsNy43LTM3cy0yLjUtMjUuNC03LjctMzcKCQkJCWMtNS4xLTExLjYtMTItMjEuOC0yMC43LTMwLjVjLTguNy04LjctMTguOC0xNS41LTMwLjQtMjAuNEMxMzEzLjYsMjY5LjcsMTMwMS4zLDI2Ny4yLDEyODguMywyNjcuMnoiLz4KCQk8L2c+Cgk8L2c+Cgk8ZyBpZD0iTGF5ZXJfNiI+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMTc5LjgsMTc0LjN2LTYxaDYxdjYxSDIxNzkuOHogTTIyNDAuNywyMDYuMnYzMTIuNmgtNjFWMjA2LjJIMjI0MC43eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2Mi4zLDI3NS44Yy0xMS0xOS45LTI1LjgtMzYuMi00NC42LTQ4LjhjLTEwLjctNy4xLTIyLjQtMTIuNi0zNS4zLTE2LjZjLTEyLjgtMy45LTI2LjItNS45LTQwLTUuOQoJCQkJYy0wLjEsMC0wLjIsMC0wLjIsMGMtMC4xLDAtMC4yLDAtMC4yLDBjLTEzLjgsMC0yNy4yLDItNDAsNS45Yy0xMi44LDMuOS0yNC42LDkuNS0zNS4zLDE2LjZjLTE4LjgsMTIuNi0zMy42LDI4LjktNDQuNiw0OC44CgkJCQljLTEwLjksMTkuOS0xNi40LDQxLjctMTYuNCw2NS40djE3OC4yaDYxdi02NC41VjM0MS4yYzAtMTAuMywyLTIwLDUuOS0yOS4zYzQtOS4zLDkuNC0xNy40LDE2LjMtMjQuM2M2LjktNi45LDE1LTEyLjMsMjQuMS0xNi4zCgkJCQljOS4xLTMuOSwxOC44LTUuOSwyOS4xLTUuOWMxMC4zLDAsMjAsMiwyOS4xLDUuOWM5LjEsNCwxNy4xLDkuNCwyNC4xLDE2LjNjNi45LDYuOSwxMi40LDE1LDE2LjMsMjQuM2M0LDkuMyw2LDE5LDYsMjkuM3YxMTMuNwoJCQkJdjY0LjVoNjFWMzQxLjJDMjU3OC43LDMxNy41LDI1NzMuMiwyOTUuNywyNTYyLjMsMjc1Ljh6Ii8+CgkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xODk0LjMsMjc1LjhjLTExLTE5LjktMjUuOC0zNi4yLTQ0LjYtNDguOGMtMTAuNy03LjEtMjIuNC0xMi42LTM1LjMtMTYuNmMtMTIuOC0zLjktMjYuMi01LjktNDAtNS45CgkJCQljLTAuMSwwLTAuMiwwLTAuMiwwYy0wLjEsMC0wLjIsMC0wLjIsMGMtMTMuOCwwLTI3LjIsMi00MCw1LjljLTEyLjgsMy45LTI0LjYsOS41LTM1LjMsMTYuNmMtMTguOCwxMi42LTMzLjYsMjguOS00NC42LDQ4LjgKCQkJCWMtMTAuOSwxOS45LTE2LjQsNDEuNy0xNi40LDY1LjR2MTc4LjJoNjF2LTY0LjVWMzQxLjJjMC0xMC4zLDItMjAsNi0yOS4zYzQtOS4zLDkuNC0xNy40LDE2LjMtMjQuM2M2LjktNi45LDE1LTEyLjMsMjQuMS0xNi4zCgkJCQljOS4xLTMuOSwxOC44LTUuOSwyOS4xLTUuOWMxMC4zLDAsMjAsMiwyOS4xLDUuOWM5LjEsNCwxNy4xLDkuNCwyNC4xLDE2LjNjNi45LDYuOSwxMi40LDE1LDE2LjMsMjQuM2M0LDkuMyw1LjksMTksNS45LDI5LjMKCQkJCXYxMTMuN3Y2NC41aDYxVjM0MS4yQzE5MTAuNywzMTcuNSwxOTA1LjIsMjk1LjcsMTg5NC4zLDI3NS44eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjEwNi4yLDI3NS44Yy0xMS0xOS45LTI1LjgtMzYuMi00NC42LTQ4LjhjLTEwLjctNy4xLTIyLjQtMTIuNi0zNS4zLTE2LjZjLTEyLjgtMy45LTI2LjItNS45LTQwLTUuOQoJCQkJYy0wLjEsMC0wLjIsMC0wLjIsMGMtMC4xLDAtMC4yLDAtMC4yLDBjLTEzLjgsMC0yNy4yLDItNDAsNS45Yy0xMi44LDMuOS0yNC42LDkuNS0zNS4zLDE2LjZjLTE4LjgsMTIuNi0zMy42LDI4LjktNDQuNiw0OC44CgkJCQljLTEwLjksMTkuOS0xNi40LDQxLjctMTYuNCw2NS40djE3OC4yaDYxdi02NC41VjM0MS4yYzAtMTAuMywyLTIwLDYtMjkuM2M0LTkuMyw5LjQtMTcuNCwxNi4zLTI0LjNjNi45LTYuOSwxNS0xMi4zLDI0LjEtMTYuMwoJCQkJYzkuMS0zLjksMTguOC01LjksMjkuMS01LjljMTAuMywwLDIwLDIsMjkuMSw1LjljOS4xLDQsMTcuMSw5LjQsMjQuMSwxNi4zYzYuOSw2LjksMTIuNCwxNSwxNi4zLDI0LjNjNCw5LjMsNS45LDE5LDUuOSwyOS4zCgkJCQl2MTEzLjd2NjQuNWg2MVYzNDEuMkMyMTIyLjcsMzE3LjUsMjExNy4yLDI5NS43LDIxMDYuMiwyNzUuOHoiLz4KCQk8L2c+Cgk8L2c+Cgk8ZyBpZD0iTGF5ZXJfNV9jb3B5Ij4KCQkKCQkJPHJlY3QgeD0iMjg4NS44IiB5PSI0ODAuOCIgdHJhbnNmb3JtPSJtYXRyaXgoMC43MDcgLTAuNzA3MiAwLjcwNzIgMC43MDcgNTExLjEwNjQgMjIwOS4yNjA3KSIgY2xhc3M9InN0MCIgd2lkdGg9IjcxLjYiIGhlaWdodD0iMTQuMSIvPgoJPC9nPgoJPGcgaWQ9IkxheWVyXzVfY29weV8yIj4KCTwvZz4KCTxnIGlkPSJMYXllcl81Ij4KCQkKCQkJPHJlY3QgeD0iMjk1NC41IiB5PSI0ODAuNiIgdHJhbnNmb3JtPSJtYXRyaXgoMC43MDcxIC0wLjcwNzEgMC43MDcxIDAuNzA3MSA0ODIuMzUyIDIyNzcuNTIwOCkiIGNsYXNzPSJzdDAiIHdpZHRoPSI3MS42IiBoZWlnaHQ9IjE1MS44Ii8+Cgk8L2c+Cgk8ZyBpZD0iTGF5ZXJfNCI+CgkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTI4NTkuMywyOTUuNmMtOC43LTguNy0xOC44LTE1LjUtMzAuNC0yMC40Yy0xMS42LTQuOS0yMy45LTcuNC0zNi45LTcuNGMtMTMsMC0yNS4zLDIuNS0zNi45LDcuNAoJCQljLTExLjYsNC45LTIxLjcsMTEuOC0zMC40LDIwLjRjLTguNyw4LjctMTUuNSwxOC45LTIwLjcsMzAuNWMtNS4xLDExLjYtNy43LDI0LTcuNywzN2MwLDEzLDIuNSwyNS40LDcuNywzNwoJCQljNS4xLDExLjYsMTIsMjEuOCwyMC43LDMwLjVjOC43LDguNywxOC44LDE1LjUsMzAuNCwyMC40YzExLjYsNC45LDIzLjksNy40LDM2LjksNy40YzEzLDAsMjUuMy0yLjUsMzYuOS03LjQKCQkJYzExLjYtNC45LDIxLjctMTEuNywzMC40LTIwLjRjOC43LTguNywxNS40LTE4LjgsMjAuNC0zMC41YzQuOS0xMS42LDcuNC0yNCw3LjQtMzd2LTAuNmMwLTEzLTIuNS0yNS4zLTcuNC0zNi43CgkJCUMyODc0LjgsMzE0LjQsMjg2OCwzMDQuMywyODU5LjMsMjk1LjZ6Ii8+Cgk8L2c+Cgk8ZyBpZD0iTGF5ZXJfMyI+CgkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTI4NDMsMjE1LjRjMywxLjEsNiwyLjMsOC45LDMuNkMyODQ2LjQsMjE2LjUsMjg0MywyMTUuNCwyODQzLDIxNS40eiIvPgoJPC9nPgoJPGcgaWQ9IkxheWVyXzIiPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yODUxLjksMjE5Yy0yLjktMS4zLTUuOS0yLjUtOC45LTMuNmMtMTYtNS43LTMzLjEtOC42LTUxLjItOC42Yy0yMS43LDAtNDIsNC4xLTYxLDEyLjEKCQkJYy0xOSw4LjEtMzUuNSwxOS4yLTQ5LjcsMzMuNWMtMTQuMiwxNC4yLTI1LjQsMzAuOC0zMy41LDQ5LjdjLTguMSwxOC45LTEyLjEsMzkuMy0xMi4xLDYxYzAsMjEuNyw0LDQyLDEyLjEsNjEKCQkJYzguMSwxOC45LDE5LjIsMzUuNSwzMy41LDQ5LjdjMTQuMiwxNC4yLDMwLjgsMjUuNCw0OS43LDMzLjVjMTguOSw4LjEsMzkuMywxMi4xLDYxLDEyLjFjMjEuNywwLDQyLTQsNjEtMTIuMQoJCQljMTguOS04LjEsMzUuNS0xOS4yLDQ5LjctMzMuNWMxNC4yLTE0LjIsMjUuNC0zMC44LDMzLjUtNDkuN2M3LjYtMTcuOCwxMS41LTM2LjksMTItNTcuMkMyOTQ0LjgsMjY5LjYsMjg3Ni43LDIzMC4xLDI4NTEuOSwyMTl6CgkJCSBNMjg4Ny4xLDM2My4xYzAsMTMtMi41LDI1LjQtNy40LDM3Yy00LjksMTEuNi0xMS43LDIxLjgtMjAuNCwzMC41Yy04LjcsOC43LTE4LjgsMTUuNS0zMC40LDIwLjRjLTExLjYsNC45LTIzLjksNy40LTM2LjksNy40CgkJCWMtMTMsMC0yNS4zLTIuNS0zNi45LTcuNGMtMTEuNi00LjktMjEuNy0xMS43LTMwLjQtMjAuNGMtOC43LTguNy0xNS41LTE4LjgtMjAuNy0zMC41Yy01LjEtMTEuNi03LjctMjQtNy43LTM3CgkJCWMwLTEzLDIuNS0yNS40LDcuNy0zN2M1LjEtMTEuNiwxMi0yMS44LDIwLjctMzAuNWM4LjctOC43LDE4LjgtMTUuNSwzMC40LTIwLjRjMTEuNi00LjksMjMuOS03LjQsMzYuOS03LjQKCQkJYzEzLDAsMjUuMywyLjUsMzYuOSw3LjRjMTEuNiw0LjksMjEuNywxMS44LDMwLjQsMjAuNGM4LjcsOC43LDE1LjQsMTguOCwyMC40LDMwLjJjNC45LDExLjUsNy40LDIzLjcsNy40LDM2LjdWMzYzLjF6Ii8+Cgk8L2c+CjwvZz4KPGcgaWQ9IkxheWVyXzkiIGNsYXNzPSJzdDIiPgoJPHBhdGggY2xhc3M9InN0MyIgZD0iTTI4NTEuOSwzNTZjMCwzMy4xLTI2LjksNjAtNjAsNjBjLTMzLjEsMC02MC0yNi45LTYwLTYwYzAtMzMuMSwyNi45LTYwLDYwLTYwCgkJQzI4MjUsMjk2LjEsMjg1MS45LDMyMi45LDI4NTEuOSwzNTZ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNMjg1Ny45LDM3Mi40YzAsMzIuOC0yOS41LDU5LjUtNjYsNTkuNXMtNjYtMjYuNi02Ni01OS41YzAtMzIuOCwyOS41LTU5LjUsNjYtNTkuNVMyODU3LjksMzM5LjUsMjg1Ny45LDM3Mi40CgkJeiIvPgo8L2c+Cjwvc3ZnPgo=">
+
+         <ul class="top-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+
+      </header>
+      <section class="content">
+         <div class="columns">
+
+            <aside class="sidebar">
+               <div class="base-header"></div>
+               <div class="img-container">
+                  <img src="images/profile-image-small.png" class="avatar">
+               </div>
+            </aside>
+            <main class="main">
+               <h1>Developer At Adeptmind</h1>
+               <p>
+                  Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company, Maluuba
+                  This time around, they raised over $5.5 million in VC funding to date, and aim to grow a heavy-hitting, Silicon Valley-style team right here in downtown Toronto, Ontario, Canada. 
+               </p>
+               <p>
+                  Adeptmind is an AI company innovating in e-commerce search using active learning and deep
+                  learning. Its co-founders recently came out of a quite successful sale of their previous company, Maluuba
+                  This time around, they raised over $5.5 million in VC funding to date, and aim to grow a heavy-hitting, Silicon Valley-style team right here in downtown Toronto, Ontario, Canada. 
+               </p>
+               <p>
+                  Adeptmind is an AI company innovating in e-commerce search using active learning and deep
+                  learning. Its co-founders recently came out of a quite successful sale of their previous company, Maluuba
+                  This time around, they raised over $5.5 million in VC funding to date, and aim to grow a heavy-hitting, Silicon Valley-style team right here in downtown Toronto, Ontario, Canada. 
+               </p>
+
+
+               <h2>Gallery</h2>
+               <div class="gallery">
+                  <div class="col-4">
+                     <img src="images/image1.jpg">
+                  </div>
+                  <div class="col-4">
+                     <img src="images/image2.jpg">
+                  </div>
+                  <div class="col-4">
+                     <img src="images/image3.jpg">
+                  </div>
+                  <div class="col-4">
+                     <img src="images/image4.jpg">
+                  </div>
+                  <div class="col-4">
+                     <img src="images/image5.jpg">
+                  </div>
+                  <div class="col-4">
+                     <img src="images/image6.jpg">
+                  </div>
+               </div>
+
+
+            </main>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="copyright">
+            © 2018
+         </div>
+         <ul class="footer-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </footer>
+   </div>
+</body>
+</html>
