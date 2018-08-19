@@ -11,7 +11,6 @@
     <meta name="msapplication-TileImage" content="image/favicon.png">
     <meta name="msapplication-TileColor" content="#d81b60">
     <meta name=theme-color content=#d81b60>
-
 	<title>Profile Styling</title>
 	<style type="text/css">
 		/*
@@ -21,23 +20,23 @@
 			Padding across the site: 30px; ( smaller padding will be 15px or 10px)
 		*/
 		body{
-		   margin: 0;
-		   font-family: sans-serif;
-		   font-family: "Roboto", sans-serif;
-		   background: #eee;
+			margin: 0;
+			font-family: sans-serif;
+			font-family: "Roboto", sans-serif;
+			background: #eee;
 		}
 		*{
-		   box-sizing: border-box
+			box-sizing: border-box
 		}
 		ul {
-		   list-style-type: none;
-		   margin: 0;
-		   padding: 0;
-		   overflow: hidden;
-		   float: right;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			float: right;
 		}
 		li {
-		   float: left;
+			font: ;loat: left;
 		}
 		li a {
 			display: block;
@@ -52,171 +51,170 @@
 			transition: all .3s ease;
 		}
 		li a:hover {
-		   background-color: #880e4f;
+			background-color: #880e4f;
 		}
 		h1{ 
-		   font-size: 1.4em;
-		   margin-top: 0;
+			font-size: 1.4em;
+			margin-top: 0;
 		}
 		h2{
-		   font-size: 1.2em;
-		   padding-top: 20px;
+			font-size: 1.2em;
+			padding-top: 20px;
 		}
 		.logo {
-		   margin-top: 30px;
-		   margin-left: 30px;
-		   height: 45px;
-		   position: relative;
+			margin-top: 30px;
+			margin-left: 30px;
+			height: 45px;
+			position: relative;
 		}
 		.avatar-container {
-		   padding: 10px;
+			padding: 10px;
 		}
 		.base-header{
-		   height: 50px;
+			height: 50px;
 		}
 		.wrapper{
-		   min-height: 100vh;
-		   background: #fff;
-		   display: flex;
-		   flex-direction: column;
-		   max-width: 1142px;
-		   margin: 0 auto; 
+			min-height: 100vh;
+			background: #fff;
+			display: flex;
+			flex-direction: column;
+			max-width: 1142px;
+			margin: 0 auto; 
 		}
 		.header, .footer{
-		   height: 56px;
+			height: 56px;
 		}
 		.header, .base-header{
-		   background: #d81b60;
+			background: #d81b60;
 		}
 		.footer{
-		   background: #212121;
+			background: #212121;
 		}
 		.content {
-		   flex: 1;
-		   display: flex;
-		   color: #000;
+			flex: 1;
+			display: flex;
+			color: #000;
 		}
 		.columns{
-		   display: flex;
-		   flex: 1;
+			display: flex;
+			flex: 1;
 		}
 		.main{
-		   flex: 1;
-		   padding: 15px 30px;
+			flex: 1;
+			padding: 15px 30px;
 		}
 		.sidebar{
-		   width: 250px;
+			width: 250px;
 		}
 		.avatar {
-		   margin-top: 20px;
-		   width: 100%;
-		   border-radius: 100%;
-		   border-bottom: 10px solid #bfbfbf !important;
-		   background: #f6f6f6;
+			margin-top: 20px;
+			width: 100%;
+			border-radius: 100%;
+			border-bottom: 10px solid #bfbfbf !important;
+			background: #f6f6f6;
 		}
 		.image-container {
-		   width: 33.3%;
-		   float: left;
-		   padding: 5px;
+			width: 33.3%;
+			float: left;
+			padding: 5px;
 		}
 		.gallery {
-    	margin-top: 20px;
+			margin-top: 20px;
 		}
 		.gallery img{
-		   width: 100% !important;
+			width: 100% !important;
 		}
 		.copyright{
-		   float: left;
-		   color: #fff;
-		   padding: 18px 20px;
+			float: left;
+			color: #fff;
+			padding: 18px 20px;
 		}
-
 		@media only screen and (max-width: 900px) {
-		  .image-container {
-		      width: 50%;
-		   }  
+			.image-container {
+				width: 50%;
+			}  
 		}
 		@media only screen and (max-width: 780px) {
-		  .sidebar {
-		    width: 180px;
-		   }
-		   .logo {
-		    margin-top: 30px;
-		    margin-left: 8px;
-		    height: 36px;
-		   }
-		   .base-header {
-		    height: 30px;
-		   }
+			.sidebar {
+				width: 180px;
+			}
+			.logo {
+				margin-top: 30px;
+				margin-left: 8px;
+				height: 36px;
+			}
+			.base-header {
+				height: 30px;
+			}
 		}
 		@media only screen and (max-width: 650px) {
-		  .image-container {
-		      width: 100%;
-		   }  
-		   .logo {
-		      margin-top: 10px;
-		   }
-		   .avatar {
-		    margin-top: -42px;
-		   }
-		   .sidebar{
-		      background: #efefef;
-		   }
+			.image-container {
+				width: 100%;
+			}  
+			.logo {
+				margin-top: 10px;
+			}
+			.avatar {
+				margin-top: -42px;
+			}
+			.sidebar{
+				background: #efefef;
+			}
 		}
 
 		@media only screen and (max-width: 500px) {
-		  .avatar {
-		   	margin-top: 20px;
-		   	background: #fff;
-		  }
-		  .logo {
-		    margin-top: 12px;
-		    margin-left: 0;
-		    height: 36px;
-		    width: 100%;
-		   }
-		   ul.top-menu {
-		    float: none;
-		    width: 100%;
-		    background: #d81b60;
-		    text-align: center;
-		   }
-		   .base-header {
-		   	display: none;
-		   }
-		   ul.top-menu li {
-		    float: left;
-		    width: 33.3%;
-		   }
-		   .content {
-		    margin-top: 40px;
-		   }
-		   .columns {
-		    display: block;
-		   }
-		   .avatar-container {
-		    text-align: center;
-		   }
-		   .avatar {
-		    width: 80%;
-		   }
-		   header.header {
-		    border-bottom: 5px solid #fff;
-		   }
-		   .sidebar {
-		    width: 100%;
-		    margin-top: 10px;
-		   }
-		   .gallery {
-		    margin-left: -30px;
-		    margin-right: -30px;
-		   }
-		   .image-container {
-		   	padding: 5px 0;
-			 }
-		   h1, h2{
-		      text-align: center;
-		   }
+			.avatar {
+			 	margin-top: 20px;
+			 	background: #fff;
+			}
+			.logo {
+			  margin-top: 12px;
+			  margin-left: 0;
+			  height: 36px;
+			  width: 100%;
+			}
+			ul.top-menu {
+				float: none;
+			  width: 100%;
+			  background: #d81b60;
+			  text-align: center;
+			}
+			.base-header {
+			 	display: none;
+			}
+			ul.top-menu li {
+			  float: left;
+			  width: 33.3%;
+			}
+			.content {
+			  margin-top: 40px;
+			}
+			.columns {
+			  display: block;
+			}
+			.avatar-container {
+			  text-align: center;
+			}
+			.avatar {
+			  width: 80%;
+			}
+			header.header {
+			  border-bottom: 5px solid #fff;
+			}
+			.sidebar {
+			  width: 100%;
+			  margin-top: 10px;
+			}
+			.gallery {
+			  margin-left: -30px;
+			  margin-right: -30px;
+			}
+			.image-container {
+			 	padding: 5px 0;
+			}
+			h1, h2{
+			  text-align: center;
+			}
 		}
 		@media only screen and (max-width: 342px) {
 			ul.footer-menu li a{
@@ -226,74 +224,67 @@
 	</style>
 </head>
 <body>
-<div class="wrapper">
-      <header class="header">
+	<div class="wrapper">
+    <header class="header">
+			<img class="logo" src="images/adeptmind-logo-white.svg">
+			<ul class="top-menu">
+			  <li><a href="#home">Home</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			</ul>
+    </header>
+    <section class="content">
+			<div class="columns">
+				<aside class="sidebar">
+					<div class="base-header"></div>
+					<div class="avatar-container">
+						<img src="images/avatar.png" class="avatar">
+					</div>
+				</aside>
+				<main class="main">
+					<h1>Developer At Adeptmind</h1>
+					<p>
+						Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company. Silicon Valley-style team right here in downtown Toronto, Ontario, Canada. 
+					</p>
+					<p>
+						Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company, Maluuba This time around, they raised over $5.5 million in VC funding to date.
+					</p>
+					<p>
+						Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company. Silicon Valley-style team right here in downtown Toronto, Ontario, Canada. 
+					</p>
 
-         <img class="logo" src="images/adeptmind-logo-white.svg">
-
-         <ul class="top-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-         </ul>
-
-      </header>
-      <section class="content">
-         <div class="columns">
-
-            <aside class="sidebar">
-               <div class="base-header"></div>
-               <div class="avatar-container">
-                  <img src="images/avatar.png" class="avatar">
-               </div>
-            </aside>
-            <main class="main">
-               <h1>Developer At Adeptmind</h1>
-               <p>
-									Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company. Silicon Valley-style team right here in downtown Toronto, Ontario, Canada. 
-               </p>
-               <p>
-									Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company, Maluuba This time around, they raised over $5.5 million in VC funding to date.
-               </p>
-               <p>
-									Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company. Silicon Valley-style team right here in downtown Toronto, Ontario, Canada. 
-               </p>
-
-               <h2>Gallery</h2>
-               <div class="gallery">
-                  <div class="image-container">
-                     <img src="images/image1.jpg">
-                  </div>
-                  <div class="image-container">
-                     <img src="images/image2.jpg">
-                  </div>
-                  <div class="image-container">
-                     <img src="images/image3.jpg">
-                  </div>
-                  <div class="image-container">
-                     <img src="images/image4.jpg">
-                  </div>
-                  <div class="image-container">
-                     <img src="images/image5.jpg">
-                  </div>
-                  <div class="image-container">
-                     <img src="images/image6.jpg">
-                  </div>
-               </div>
-
-            </main>
-         </div>
-      </section>
-      <footer class="footer">
-         <div class="copyright">
-            © 2018
-         </div>
-         <ul class="footer-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-         </ul>
-      </footer>
+					<h2>Gallery</h2>
+					<div class="gallery">
+						<div class="image-container">
+							<img src="images/image1.jpg">
+						</div>
+						<div class="image-container">
+							<img src="images/image2.jpg">
+						</div>
+						<div class="image-container">
+							<img src="images/image3.jpg">
+						</div>
+						<div class="image-container">
+							<img src="images/image4.jpg">
+						</div>
+						<div class="image-container">
+							<img src="images/image5.jpg">
+						</div>
+						<div class="image-container">
+							<img src="images/image6.jpg">
+						</div>
+					</div>
+				</main>
+			</div>
+    </section>
+    <footer class="footer">
+			<div class="copyright">© 2018</div>
+			<ul class="footer-menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+    </footer>
    </div>
 </body>
 </html>
