@@ -147,3 +147,8 @@ console.log(resultCategory);
 console.log(resultStatus);
 console.log(resultCreator);
 
+ /**
+ * PS, Here I am just doing a simple output using console.log. There are different ways to display the results I know that I coud use fs.writeFile(); function to save in an external file, 
+ or simply to create a new object to set my values to this etc...
+ But I am just using a simple console.log here to keep it simple. As I believe here the idea is how my reasoning is =)
+ */
