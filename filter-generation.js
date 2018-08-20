@@ -125,9 +125,9 @@ data.forEach((element, index) => {
 
 //All lists ( `attribute`, `category`, `status` and `creator` ) should be unique with no falsey values
 //creating unique arrays with es6...
-attribute   = [...new Set(attribute)];
-category  = [...new Set(category)];
-status   = [...new Set(status)];
+attribute = [...new Set(attribute)];
+category = [...new Set(category)];
+status = [...new Set(status)];
 creator = [...new Set(creator)];
 
 //`attribute`, `category` and `status` should be sorted alphabetically 
